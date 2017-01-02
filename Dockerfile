@@ -60,7 +60,6 @@ ENV LC_ALL C.UTF-8
 RUN apt-get clean
 RUN rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
-
 WORKDIR /var/www/html
 
 EXPOSE 80
