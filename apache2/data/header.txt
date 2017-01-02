@@ -1,0 +1,48 @@
+<body> 
+  <div id="doc">
+    <div id="hd">
+      <h1><a href="badstore.cgi">Welcome to Badstore.net</a></h1>        
+      <div id="hdbar">
+        <form method="get" action="badstore.cgi">
+          <p>            
+            <input type="hidden" name="action" value="search" />
+            <input type="text" id="searchquery" name="searchquery" size="10" value="Search" onfocus="(this.value!='Search'||(this.value=''));" onblur="this.value||(this.value='Search');" />
+            <input type="submit" value="Go" />
+          </p>
+        </form>
+        <div id="hdcart">
+          <iframe src="/cgi-bin/bsheader.cgi" height="20" width="370" border="0" frameborder="0" noresize="noresize" style="border:0;margin-top:8px;background-color:transparent"></iframe>          
+        </div>
+        <p id="cart-link"><a href="badstore.cgi?action=cartview">View Cart</a></p>
+      </div>
+    </div>
+    <div id="bd">
+      <div id="side">
+        <h3>Shop Badstore.net</h3>
+        <ul>
+          <li><a href="badstore.cgi">Home</a></li>
+          <li><a href="badstore.cgi?action=whatsnew">What's New</a></li>
+          <li><a href="badstore.cgi?action=guestbook">Sign Our Guestbook</a></li>
+          <li><a href="badstore.cgi?action=viewprevious">View Previous Orders</a></li>
+          <li><a href="badstore.cgi?action=aboutus">About Us</a></li>
+          <li><a href="badstore.cgi?action=myaccount">My Account</a></li>
+          <li><a href="badstore.cgi?action=loginregister">Login / Register</a></li>
+        </ul>
+        
+        <h3>Suppliers Only</h3>
+        <ul>
+          <li><a href="badstore.cgi?action=supplierlogin">Supplier Login</a></li>
+          <li><a href="/DoingBusiness/contract.doc">Supplier Contract</a></li>
+          <li><a href="badstore.cgi?action=supplierproc">Supplier Procedures</a></li>
+        </ul>
+        
+        <h3>Reference</h3>
+        <ul>
+          <li>
+            <a href="/BadStore_net_v1_2_Manual.pdf">BadStore.net Manual v1.2</a>
+            <a href="/scanbot/scanbot.html"></a>
+          </li>
+        </ul>
+      </div>
+      
+      <div id="main">

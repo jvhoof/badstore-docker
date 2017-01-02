@@ -1,0 +1,67 @@
+html, body, form {padding: 0; margin: 0}
+
+html {font-family: arial; height: 100%;}
+body {font-size: 78.0%;}
+h1, h2, h3, h4 {font-weight: normal; margin: 0; padding: 0 0 10px}
+h1 {font-size: 1.9em;}
+h2 {font-size: 1.50em;}
+h3 {font-size: 1.20em; padding-bottom: 5px}
+h4 {font-size: 1.10em; padding-bottom: 3px}
+p {color: #444; margin: 0 0 10px; line-height: 1.45em}
+form {margin: 0 0 10px 0}
+fieldset {border: 1px solid #f0f0f0; padding: 10px; margin: 10px 0}
+legend {color: #888; font-size: 1.2em}
+input, textarea, select, button {font-family: arial; font-size: 0.95em}
+input[type=text], input[type=password], textarea, select {border: 1px solid #888; border-color: #888 #ddd #ddd #888;}
+optgroup {font-weight:normal; font-style:normal}
+table {width:100%}
+td, th {padding: 3px 5px}
+th {text-align: left; background-color: #f0f0f0; font-weight: bold; color: #606060; border-bottom: 1px solid #E0E0E0; line-height: 1.6em;}
+ul {margin: 0; padding: 0 0 10px 25px}
+li {margin: 0; padding: 0 0 2px 0}
+a, a:visited {color: #0066DF; outline: none; text-decoration: underline;}
+a:visited {color: #003366}
+a:hover {text-decoration: none;}
+a img {border:0}
+hr {border: 1px solid #ccc}
+
+#doc {background-color: #fff; width: 750px; margin: 20px auto 20px auto; padding:15px}
+
+#bd {clear:both}
+
+#hd {}
+#hd h1 {margin:0; padding:0;}
+#hd h1 a {display:block; width:210px; height:25px; background:url(../images/logo.png) 0 0 no-repeat; text-indent:-1000px}
+#hd form {float:right; width:170px;padding: 0 10px; text-align:right}
+#hd #searchquery {border: 1px solid #888; background-color: #fff; width: 100px;}
+#hd p {line-height: 31px; height:31px;}
+#hdbar {width:750px; height:31px; margin-top: 5px; background:url(../images/header-bar.png) 0 0 no-repeat;}
+#hdcart {float: left; padding-left: 10px}
+#cart-link {float: left; width: 70px}
+#ft {clear:both;text-align:center; font-size: 10px; margin-top: 15px; color: #999}
+
+#nav {background-color: #333;}
+#nav ul {margin: 0; padding: 5px; height: 25px}
+#nav ul li {display: block; padding: 5px; float: left;}
+#nav a {color: #fff}
+
+#side {width: 160px; float: left}
+#side h3 {margin: 0; padding: 4px; font-size: 12px; font-weight: bold; background-color: #ddd; color: #444}
+#side ul {margin: 0 0 10px 0; padding: 3px 5px; border: 1px solid #f0f0f0;}
+#side ul li {list-style: none outside; padding: 1px; margin: 0 0 2px 0}
+#side a, #side a:visited {color: #555}
+#main {margin: 0; padding-left: 180px; color: #555}
+#main h2, #main h1 {font-size: 17px; border-bottom: 2px solid #e5e5e5; padding: 0 0 3px 0; margin: 0 0 13px 0;}
+
+/* global modifiers */
+.last {margin-bottom: 0 !important; padding-bottom: 0 !important}
+.clear:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.inline-box {width: 200px; min-height: 200px; display: -moz-inline-stack; display: inline-block; vertical-align: top; margin: 5px; zoom: 1; *display: inline; _height: 200px;}
+.js-on, .js-on-inline {display: none}
+.js-enabled .js-on {display: block}
+.js-enabled .js-on-inline {display: inline}
+.js-enabled .js-off, body.js-enabled .js-off-inline {display: none}
+
+.hr {margin-top: 10px; padding-top: 8px; border-top: 1px solid #ccc}
+
+table.products td {border: 1px solid #eee}

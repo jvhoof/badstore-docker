@@ -1,0 +1,87 @@
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 MARGINHEIGHT="0" MARGINWIDTH="0">
+
+<TABLE cellSpacing=0 cellPadding=0 width=760 bgColor=#004b2c border=0>
+  <TBODY>
+  <TR>
+    <TD width=326 bgColor=#004b2c>
+<IMG height=60 alt="BadStore.net" hspace=0 src="/images/BadStore.jpg"
+width=350
+border=0>
+  </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+  <TBODY>
+  <TR vAlign=top align=left>
+    <TD vAlign=top width=143 bgColor=#ecece0>
+      <TABLE cellSpacing=0 cellPadding=0 width=143 bgColor=#004b2c border=0>
+        <FORM name=search onsubmit=/cgi-bin/badstore.cgi 
+        method=get> 
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=143 colSpan=3>
+            <TABLE cellSpacing=0 cellPadding=0 width=143 border=0>
+              <TBODY>
+              <TR bgColor=#004b2c>
+                </TR>
+              <TR vAlign=center bgColor=#004b2c width="138">
+                <TD class=normal width=94 height=30>&nbsp;<INPUT class=normal 
+                  maxLength=60 size=10 name=searchquery> </TD>
+		<font color=yellow size=2 face=Arial><Center><B>Quick Item Search</B></Center></font>
+                <TD width=44>
+                  <BR><INPUT type=hidden value='search' name='action'> 
+                  <INPUT 
+                  onclick="Go Search" type=image height=25 alt="Go Search" 
+                  width=44 
+                  src="/images/index.gif" 
+                  border=0></A></TD></TR>
+              <TR bgColor=#004b2c>
+                </TR>
+              <TR>
+                <TD colSpan=2></TD></TR></TBODY></FORM></TABLE></TD></TR>
+        <TR bgColor=#ecece0>
+          
+          <TD class=normal width=135><BR> 
+            <A HREF="/cgi-bin/badstore.cgi">Home </A><BR>
+		<P>
+            <A HREF="/cgi-bin/badstore.cgi?action=whatsnew">What's New </A><BR>
+		<P>
+		<A HREF="/cgi-bin/badstore.cgi?action=guestbook">Sign Our Guestbook </A><BR>
+		<P>
+            <A HREF="/cgi-bin/badstore.cgi?action=viewprevious">View Previous Orders <BR></A>
+		<P>
+            <A HREF="/cgi-bin/badstore.cgi?action=aboutus">About Us </A><BR>
+		<P>
+		<A HREF="/cgi-bin/badstore.cgi?action=myaccount">My Account</A><BR><P>
+		<A HREF="/cgi-bin/badstore.cgi?action=loginregister">Login / Register</A><BR>
+		<Center><P><HR><B>- Suppliers Only -</B><P></Center>
+            <A HREF="/cgi-bin/badstore.cgi?action=supplierlogin">Supplier
+Login</A><BR>
+		<A HREF="/DoingBusiness/contract.doc">Supplier Contract</A><BR>
+		<A HREF="/Procedures/UploadProc.html">Supplier Procedures</A><BR>
+		<P><HR>
+            <Center><B><i>- Reference -</i></B></Center><p>
+		<A HREF="/BadStore_net_v1_2_Manual.pdf"><FONT SIZE=-2><i>BadStore.net Manual
+v1.2</i></FONT></A><BR>
+		<A HREF="/scanbot/scanbot.html"></A>
+		<P>
+		<HR>
+		</TD></TR>
+
+</TBODY></TABLE></TD>
+    <TD width=1 bgColor=#ecece0> 
+      </TD>
+    <TD width=615>
+      <TABLE cellSpacing=0 cellPadding=0 width=614 border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#333333></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width=614 border=0>
+        <TBODY>
+        <TR bgColor=#ecece0></TR>
+        <TR bgColor=#ecece0>
+          <TD class=normal width=550 height=20>&nbsp;
+<IFRAME name="bsheader" src="bsheader.cgi" height=27 width=450 marginheight=0 marginwidth=0 scrolling="no" noresize></IFRAME>
+            </TD>
+          <TD class=normal width=120><IMG SRC="/images/cart.jpg"><A
+HREF="/cgi-bin/badstore.cgi?action=cartview">View Cart</A></TD></TR>
+        <TR bgColor=#333333>
+          </TR></TBODY></TABLE><FONT FACE='Arial'>
