@@ -2,7 +2,6 @@
 # Apache HTTP foreground https://github.com/chriswayg/apache-php
 
 FROM debian:jessie
-MAINTAINER jvh@jvh.be
 
 ENV DEBIAN_FRONTEND noninteractive
 
