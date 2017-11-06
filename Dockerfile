@@ -68,6 +68,5 @@ EXPOSE 80
 ADD supervisor/conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # By default start up apache in the foreground, override with /bin/bash for interative.
-#CMD /usr/sbin/apache2ctl -D FOREGROUND
 # start supervisor
 CMD ["/usr/bin/supervisord"]
