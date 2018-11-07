@@ -33,7 +33,7 @@ COPY apache2/cgi-bin/ /data/apache2/cgi-bin/
 COPY apache2/data/ /data/apache2/data/
 COPY apache2/htdocs/ /data/apache2/htdocs/
 COPY apache2/icons/ /data/apache2/htdocs/icons/
-RUN ls -la /data/apache2/htdocs/*
+RUN chown www-data /data/apache2/data/guestbookdb
 
 # Setup Mysql
 
