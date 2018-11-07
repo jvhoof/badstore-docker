@@ -393,9 +393,9 @@ sub adminportal
 			}
 			print "</TABLE>",p,
 			h2("Recent Apache Error Log"),p,
-			`tail /usr/local/apache/logs/error_log`,
+			`tail /data/apache2/logs/error_log`,
 			p, h2("Apache Access Log"),p,
-			`cat /usr/local/apache/data/userdb`;
+			`cat /data/apache2/data/userdb`;
 
 			} elsif ($aquery eq 'Add User') {
 
@@ -442,10 +442,10 @@ sub adminportal
 			print "</TABLE>";
 			} elsif ($aquery eq 'Backup Databases') {
 			### Backup the Tables ###
-			my $sth = $dbh->prepare( "SELECT * FROM orderdb INTO OUTFILE '/usr/local/apache/htdocs/backup/orderdb.bak'")
+			my $sth = $dbh->prepare( "SELECT * FROM orderdb INTO OUTFILE '/data/apache2/htdocs/backup/orderdb.bak'")
 	            	    or die "Couldn't prepare statement: " . $dbh->errstr;
 		      	$sth->execute() or die "Couldn't execute SQL statement: " . $sth->errstr;
-			my $sth = $dbh->prepare( "SELECT * FROM userdb INTO OUTFILE '/usr/local/apache/htdocs/backup/userdb.bak'")
+			my $sth = $dbh->prepare( "SELECT * FROM userdb INTO OUTFILE '/data/apache2/htdocs/backup/userdb.bak'")
 	            	    or die "Couldn't prepare statement: " . $dbh->errstr;
 		      	$sth->execute() or die "Couldn't execute SQL statement: " . $sth->errstr;
 			print h2("Database backup compete - files in www.badstore.net/backup");
@@ -494,7 +494,7 @@ sub guestbook
 sub doguestbook
 {
 	local($timestamp, $name, $email, $comments, %fields);
-	my ($dataFile) = "/usr/local/apache/data/guestbookdb";
+	my ($dataFile) = "/data/apache2/data/guestbookdb";
 	
 	$timestamp=&getdate;
 	$name=$query->param('name');
