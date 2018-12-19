@@ -16,6 +16,7 @@ More details about the environment are found in subsequent sections. After boot,
 To run the BadStore.net application, simply pull or build the image into a docker host. 
 ```
 docker pull jvhoof/badstore-docker
+docker run -d 80:80 jvhoof/badstore-docker
 ```
 
 ## License
