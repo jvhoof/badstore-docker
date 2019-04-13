@@ -13,13 +13,11 @@ More details about the environment are found in subsequent sections. After boot,
 <a href="https://cryptopone.com/downloads/BadStore_net_v2_1_Manual.pdf">Documentation</a>
 
 ## Installation
-To run the BadStore.net application, simply pull or build the image into a docker host. 
+To run the BadStore.net application, simply pull or build the image into a docker host.
 ```
 docker pull jvhoof/badstore-docker
-docker run -d 80:80 jvhoof/badstore-docker
+docker run -d -p 80:80 jvhoof/badstore-docker
 ```
 
 ## License
 BadStore.net is currently available in English and Japanese language versions and was released under the terms of the GNU General Public License.
-
-
