@@ -34,6 +34,7 @@ COPY apache2/data/ /data/apache2/data/
 COPY apache2/htdocs/ /data/apache2/htdocs/
 COPY apache2/icons/ /data/apache2/htdocs/icons/
 RUN chown www-data /data/apache2/data/guestbookdb
+RUN chown www-data:mysql /data/apache2/htdocs/backup
 
 # Setup Mysql
 
