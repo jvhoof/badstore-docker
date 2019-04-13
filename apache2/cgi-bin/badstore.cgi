@@ -441,7 +441,14 @@ sub adminportal
 			}
 			print "</TABLE>";
 			} elsif ($aquery eq 'Backup Databases') {
-			### Backup the Tables ###
+      ### Unlink old backups ###
+      if( -f '/data/apache2/htdocs/backup/orderdb.bak') {
+              unlink '/data/apache2/htdocs/backup/orderdb.bak';
+      }
+      if( -f '/data/apache2/htdocs/backup/userdb.bak') {
+              unlink '/data/apache2/htdocs/backup/userdb.bak';
+      }
+      ### Backup the Tables ###
 			my $sth = $dbh->prepare( "SELECT * FROM orderdb INTO OUTFILE '/data/apache2/htdocs/backup/orderdb.bak'")
 	            	    or die "Couldn't prepare statement: " . $dbh->errstr;
 		      	$sth->execute() or die "Couldn't execute SQL statement: " . $sth->errstr;
