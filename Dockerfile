@@ -1,7 +1,7 @@
 # Dockerfile for Badstore
 # Apache HTTP foreground https://github.com/chriswayg/apache-php
 
-FROM debian:stretch
+FROM debian:buster
 
 ENV DEBIAN_FRONTEND noninteractive
 
