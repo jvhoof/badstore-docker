@@ -43,5 +43,5 @@ jobs:
           context: .
           push: true
           tags: |
-          - ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_REPOSITORY }}:${{ env.DOCKERHUB_TAG }}
-          - ${{ steps.meta.outputs.tags }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_REPOSITORY }}:${{ env.DOCKERHUB_TAG }}
+            ${{ steps.meta.outputs.tags }}
