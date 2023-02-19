@@ -1,12 +1,4 @@
-# https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# GitHub recommends pinning actions to a commit SHA.
-# To get a newer version, you will need to update the SHA.
-# You can also reference a tag or branch, but the action may change without warning.
+# https://docs.docker.com/build/ci/github-actions/examples/
 
 name: Docker image create and publish
 
@@ -17,8 +9,10 @@ on:
       - main
 
 env:
-  REGISTRY: jvhoof
-  IMAGE_NAME: ${{ github.repository }}
+  DOCKERHUB_REPOSITORY: badstore-docker
+  DOCKERHUB_TAG: latest
+  GH_IMAGE_NAME: ${{ github.repository }}
+  GH_REGISTRY: ghcr.io
 
 jobs:
   build-and-push-image:
@@ -48,4 +42,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: jvhoof/badstore-docker:latest
+          tags: |
+          - ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_REPOSITORY }}:${{ env.DOCKERHUB_TAG }}
+          - ${{ steps.meta.outputs.tags }}
