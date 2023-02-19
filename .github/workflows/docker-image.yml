@@ -52,4 +52,4 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_REPOSITORY }}:${{ env.DOCKERHUB_TAG }}
-            ghcr.io/jvhoof/badstore-docker:main
+            ${{ env.GH_REGISTRY }}/${{ GH_IMAGE_NAME }}:main
