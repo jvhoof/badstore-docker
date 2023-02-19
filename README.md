@@ -14,9 +14,16 @@ More details about the environment are found in subsequent sections. After boot,
 
 ## Installation
 To run the BadStore.net application, simply pull or build the image into a docker host.
+Using the Docker Hub repository:
 ```
 docker pull jvhoof/badstore-docker
 docker run -d -p 80:80 jvhoof/badstore-docker
+```
+
+For the GitHub Container repository:
+```
+docker pull ghcr.io/jvhoof/badstore-docker:main
+docker run -d -p 80:80 ghcr.io/jvhoof/badstore-docker:main
 ```
 
 ## License
